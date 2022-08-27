@@ -1,0 +1,158 @@
+/* font-family: 'Nunito', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: pink;
+    font-family: 'Nunito', sans-serif;
+}
+
+.todo-container {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.103);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo {         /* interior box of list items */
+    width: 400px;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+input {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom:  2px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+}
+
+textarea {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.todo-header button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(167, 129, 136);
+    border-radius: 5px;
+}
+.todo-header button:hover {
+    background-color: rgb(176, 230, 209);
+}
+
+ul {
+    list-style: none;
+}
+
+.todo-list-item {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(212, 162, 171);
+    display: flex;
+    flex-direction: row;
+}
+.todo-list-item:hover {
+    background:rgb(176, 230, 209);
+}
+
+.todo-list-item-content {
+    font-size: .8rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.todo-list-item form {
+    width: 100%;
+    display: flex;
+}
+
+.todo-list-item input {
+    flex-grow: 2;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.todo-list-item .confirm {
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(167, 129, 136);
+    margin-left: 5px;
+    max-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+}
+.todo-list-item .confirm:hover {
+    background-color:white;
+    color: rgb(176, 230, 209);
+}
+
+.todo-list-item .cancel {
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(97, 73, 77);
+    margin-left: 5px;
+    max-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+}
+.todo-list-item .cancel:hover {
+    background-color:white;
+    color: rgb(176, 230, 209);
+}
+
+.todo-list-item div {
+    flex-grow: 2;
+}
+
+.todo-list-item .edit {
+    color:rgb(97, 73, 77);
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: auto;
+}
+.todo-list-item .edit:hover {
+    color: white;
+}
+
+.todo-list-item .remove {
+    color:rgb(97, 73, 77);
+}
+.todo-list-item .remove:hover {
+    color: white;
+}
